@@ -10,9 +10,9 @@ const _SESSION_ID_FIELD = 'session_id'
 const _SESSION_ID_COOKIE = 'sessionId'
 
 export async function transactionsRoutes(app: FastifyInstance) {
-  app.addHook('preHandler', async (request, reply) => {
-    console.log(`${request.method} ${request.url}`)
-  })
+  // app.addHook('preHandler', async (request, reply) => {
+  //   console.log(`${request.method} ${request.url}`)
+  // })
 
   app.get(
     '/',
